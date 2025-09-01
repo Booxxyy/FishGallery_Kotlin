@@ -1,6 +1,3 @@
-package com.bluerose.fishgallery.ui.theme
-
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -10,16 +7,33 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
+import com.bluerose.fishgallery.ui.theme.OnPrimaryColor
+import com.bluerose.fishgallery.ui.theme.OnSecondaryColor
+import com.bluerose.fishgallery.ui.theme.OnSurfaceColor
+import com.bluerose.fishgallery.ui.theme.Pink40
+import com.bluerose.fishgallery.ui.theme.Pink80
+import com.bluerose.fishgallery.ui.theme.PrimaryColor
+import com.bluerose.fishgallery.ui.theme.SecondaryColor
+import com.bluerose.fishgallery.ui.theme.SurfaceColor
+import com.bluerose.fishgallery.ui.theme.Typography
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
+    primary = PrimaryColor,
+    onPrimary = OnPrimaryColor,
+    secondary = SecondaryColor,
+    onSecondary = OnSecondaryColor,
+    surface = SurfaceColor,
+    onSurface = OnSurfaceColor,
     tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
+    primary = PrimaryColor,
+    onPrimary = OnPrimaryColor,
+    secondary = SecondaryColor,
+    onSecondary = OnSecondaryColor,
+    surface = SurfaceColor,
+    onSurface = OnSurfaceColor,
     tertiary = Pink40
 
     /* Other default colors to override
